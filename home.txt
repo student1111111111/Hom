@@ -1,0 +1,137 @@
+-----------------------------------------------------------------------
+Задача. Кожне парне число збільшити на 5. 
+var a = [1,2,3,4,5,6,7,8];
+        a.forEach((x, i, arr) => { if (x %2==0) a[i] = x * 5;   })
+        alert(a)
+
+-----------------------------------------------------------------------
+Задача. Дано масив чисел. Сформувати новий масив, у якому усі числа збільшено на 20.
+   var a = [1,2,3,4,5,6,7]
+        a.forEach((x, i, arr) => { a[i] = x * 20;})
+        alert (a)
+
+-----------------------------------------------------------------------
+Задача. Дано масив показників термометра протягом місяця. З’ясувати, чи є серед них дні, коли температура була меншою за 5 градусів.
+function temp(arr)
+        {
+            for (let i = 0; i < arr.length; i++)
+            {
+                if (arr[i]>5)
+                {
+                 alert("There are")
+                 break 
+                }
+            else
+                {
+                    alert("There are not")
+                }            
+            }
+        }
+        var arr = []
+        var mont=parseInt(prompt("How many days?"))
+        switch (mont) 
+        {
+            case 30:for (var i = 0; i < 30; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+            case 31:for (var i = 0; i < 31; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+            case 28:for (var i = 0; i < 30; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+            case 29:for (var i = 0; i < 29; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+                     case 4:for (var i = 0; i < 4; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+        
+            default: 
+                    prompt("Errror count of d in month")
+                break;
+        }
+        temp(arr)
+
+
+-----------------------------------------------------------------------
+Задача. Дано масив показників термометра протягом місяця. З’ясувати, чи усі показники є більшими за 10 градусів.
+function temp(temp)
+        {
+           return temp>10
+        }
+        var arr = []
+        var mont=parseInt(prompt("How many days?"))
+        switch (mont) 
+        {
+            case 30:for (var i = 0; i < 30; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+            case 31:for (var i = 0; i < 31; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+            case 28:for (var i = 0; i < 30; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+            case 29:for (var i = 0; i < 29; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+                     case 4:for (var i = 0; i < 4; i++)
+                    {
+                        arr[i] = parseInt(prompt("Enter temp"+(i+1),"0"))
+                    }
+                     break;
+        
+            default: 
+                    prompt("Errror count of d in month")
+                break;
+        }
+        if (arr.every(temp))
+            alert("all>10");
+        else
+            alert("there are<10");
+
+-----------------------------------------------------------------------
+Задача. Знайти добуток від’ємних елементів масиву.
+var product= a.reduce(  (result,x) => x<0? result*x : result   , 1)
+-----------------------------------------------------------------------
+Задача. Знайти суму від’ємних елементів масиву.
+     var a=[-1,-2,-5,1,4]
+     var sum= a.reduce(  (result,x) => x<0? result+x : result   , 0)
+     alert (sum)
+
+------------------------------------------------------------------------------
+
+Задача 1. Дано одновимірний масив. Кожен елемент
+1)піднести до квадрату;
+       var a = [10,-12,1,8,-4,-7];
+        a.forEach((x, i, arr) => { a[i] = x * x;   })
+        alert(a)
+
+2)помножити на 7;
+        var a = [10,-12,1,8,-4,-7];
+        a.forEach((x, i, arr) => { a[i] = x * 7;   })
+        alert(a)
+
+3)поділити на 10.
+        var a = [10,-12,1,8,-4,-7];
+        a.forEach((x, i, arr) => { a[i] = x /10;   })
+        alert(a)
